@@ -257,7 +257,7 @@ html[dir="rtl"] .process-label { inset-inline: 12px auto; }
 .project-hero { position: relative; height: clamp(520px, 62svh, 650px); overflow: hidden; background: #d4ccc2; }
 .project-hero > img { width: 100%; height: 100%; object-fit: cover !important; animation: project-hero-in 800ms var(--ease) both; }
 .project-hero-note { position: absolute; inset: auto var(--page-padding) 26px auto; color: #fff; font-family: var(--font-en); font-size: 11px; letter-spacing: .18em; }
-html[dir="rtl"] .project-hero-note { inset-inline: var(--page-padding) auto; }
+html[dir="rtl"] .project-hero-note { right: auto; left: var(--page-padding); }
 @keyframes project-hero-in { from { opacity: 0; transform: scale(1.01); } to { opacity: 1; transform: none; } }
 
 .project-intro { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(340px, .9fr); gap: 34px 64px; align-items: end; padding-block: 38px 46px; border-bottom: 1px solid var(--line); }
@@ -286,8 +286,8 @@ html[dir="rtl"] .project-intro-copy { padding-inline: 64px 0; }
 .gallery-item { position: relative; display: block; min-width: 0; padding: 0; overflow: hidden; border: 0; background: #e7e3dc; text-align: inherit; }
 .gallery-item img { width: 100%; height: auto; background: #e7e3dc; opacity: 1; transition: transform 850ms var(--ease), opacity 400ms ease; }
 .gallery-item:hover img { transform: scale(1.008); opacity: .97; }
-.gallery-image-count { position: absolute; inset: auto auto 18px 18px; color: #fff; font-size: 11px; font-weight: 500; letter-spacing: .18em; text-shadow: 0 1px 12px rgba(0,0,0,.24); }
-html[dir="rtl"] .gallery-image-count { inset-inline: 18px auto; }
+.gallery-image-count { position: absolute; inset: auto auto 18px 18px; color: #fff; font-size: 11px; font-weight: 500; letter-spacing: .18em; text-shadow: 0 1px 2px rgba(0,0,0,.32), 0 2px 16px rgba(0,0,0,.38); }
+html[dir="rtl"] .gallery-image-count { right: 18px; left: auto; }
 .gallery-lead { display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr); gap: 18px; height: clamp(540px, 48vw, 720px); }
 .gallery-lead-main, .gallery-lead-side, .gallery-lead-detail { min-height: 0; }
 .gallery-lead-main img, .gallery-lead-detail img { width: 100%; height: 100%; object-fit: cover; }
@@ -577,7 +577,7 @@ html[dir="rtl"] .about-vision-image > span, html[dir="rtl"] .about-still-life > 
   .gallery-item, .gallery-carmel .gallery-item, .gallery-herzliya .gallery-item { display: block; width: 100%; }
   .gallery-lead-main img, .gallery-lead-detail img { height: auto; }
   .gallery-image-count { inset: auto auto 14px 14px; font-size: 10px; }
-  html[dir="rtl"] .gallery-image-count { inset-inline: 14px auto; }
+  html[dir="rtl"] .gallery-image-count { right: 14px; left: auto; }
   .project-story, .project-story-secondary { width: 100%; margin-block: 54px 42px; padding-inline: 0; }
   .project-story-primary { display: block; }
   .project-story .eyebrow { gap: 16px; }
